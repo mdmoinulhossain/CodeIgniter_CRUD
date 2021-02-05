@@ -22,7 +22,7 @@
           <a class="nav-link" aria-current="page" href="<?php echo base_url('createUser'); ?>">Create User</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">LIST</a>
+          <a class="nav-link" href="<?php echo base_url('List'); ?>">LIST</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>

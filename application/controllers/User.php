@@ -29,4 +29,14 @@ class User extends CI_Controller {
 			redirect(base_url('/'));
 		}
 	}
+
+	public function read()
+	{
+		$this->load->model('User_model');
+
+		$users = $this->User_model->all();
+		$data = array();
+		$data['users'] = $users;
+		$this->load->view('list', $data);
+	}
 }
