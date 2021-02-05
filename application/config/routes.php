@@ -55,8 +55,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 //Static Pages
-// Example-> 'createUser' is a url to show, 'Welcome' is a controller name, 'createpage' is a method name in controller file!
-$route['createUser'] = "Welcome/createpage";
+// Example-> 'createUser' is a url to show, 'User' is a controller name, 'create' is a method name in controller file!
+$route['createUser'] = "User/create";
 $route['Tips'] = "Home/generaltips";
 $route['ageTips'] = "Home/agetips";
 $route['symptomTips'] = "Home/symptomtips";
