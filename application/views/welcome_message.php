@@ -52,6 +52,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Welcome To The World</h1>
 
 	<div id="body">
+				<?php 
+					$success = $this->session->userdata('success');
+					if($success != "") {
+				?>
+				<div class="alert alert-success" role="alert"><?php echo $success; ?></div>
+				<?php } ?>
+
+				<?php 
+					$failed = $this->session->userdata('failed');
+					if($failed != "") {
+				?>
+				<div class="alert alert-danger" role="alert"><?php echo $failed; ?></div>
+				<?php } ?>		
 		<h2>CODEIGNITER CRUD APPLICATION</h2>
 	</div>
 </div>

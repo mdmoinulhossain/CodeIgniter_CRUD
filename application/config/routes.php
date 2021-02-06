@@ -58,5 +58,3 @@ $route['translate_uri_dashes'] = FALSE;
 // Example-> 'createUser' is a url to show, 'User' is a controller name, 'create' is a method name in controller file!
 $route['createUser'] = "User/create";
 $route['List'] = "User/read";
-$route['ageTips'] = "Home/agetips";
-$route['symptomTips'] = "Home/symptomtips";

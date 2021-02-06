@@ -43,7 +43,7 @@
     </div>
     <div class="col-12">
       <button class="btn btn-primary" type="submit">Create</button>
-      <a href="#" class="btn btn-dark">Cancel</a>
+      <a href="<?php echo base_url('/') ?>" class="btn btn-dark">Cancel</a>
     </div>
   </form>
 </div>
