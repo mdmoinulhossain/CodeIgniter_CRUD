@@ -57,13 +57,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					if($success != "") {
 				?>
 				<div class="alert alert-success" role="alert"><?php echo $success; ?></div>
-				<?php } ?>
+				<?php } else { ?>
 
 				<?php 
 					$failed = $this->session->userdata('failed');
 					if($failed != "") {
 				?>
 				<div class="alert alert-danger" role="alert"><?php echo $failed; ?></div>
+				<?php } ?>
+
 				<?php } ?>		
 		<h2>CODEIGNITER CRUD APPLICATION</h2>
 	</div>

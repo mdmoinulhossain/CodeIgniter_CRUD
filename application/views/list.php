@@ -30,7 +30,7 @@
                         <a href="<?php echo base_url('User/edit/').$member['user_id']; ?>" class="btn btn-info">
                         <i class="bi bi-pen-fill"></i> Edit</a>
                     </td>
-                    <td><a href="<?php echo base_url('User/delete').$member['user_id']; ?>" class="btn btn-danger"><i class="bi bi-shield-fill-x"></i> Delete</a></td>
+                    <td><a href="<?php echo base_url('User/delete/').$member['user_id']; ?>" class="btn btn-danger"><i class="bi bi-shield-fill-x"></i> Delete</a></td>
                 </tr>
             <?php } } else {?>
                 <tr>

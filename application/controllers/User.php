@@ -75,9 +75,18 @@ class User extends CI_Controller {
 		
 	}
 
-	public function delete()
+	public function delete($UserId)
 	{
+		$this->load->model('User_model');
+		$user = $this->User_model->getUser($UserId);
+		if (empty($user)) {
+			$this->session->set_flashdata('failed', 'Record Not deleted!');
+			redirect(base_url('/'));
+		}
 
+		$this->User_model->deleteUser($UserId);
+		$this->session->set_flashdata('success', 'Record deleted successfully!');
+		redirect(base_url('/'));
 	}
 
 }

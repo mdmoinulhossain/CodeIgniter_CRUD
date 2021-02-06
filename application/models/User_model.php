@@ -20,6 +20,11 @@ class User_model extends CI_model{
         $this->db->update('users', $formArray);        // select * from users table where user_id = ? for update
     }
 
+    function deleteUser($UserId){
+        $this->db->where('user_id', $UserId);
+        $this->db->delete('users');        // delete * from users table by user_id;
+    }
+
 }
 
 ?>
